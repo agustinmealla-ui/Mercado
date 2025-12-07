@@ -1,0 +1,121 @@
+/* Bloomberg Terminal Theme - Custom CSS Classes */
+
+/* Typography */
+.terminal-header {
+  @apply text-xs font-medium text-bloomberg-text-secondary uppercase tracking-wider;
+}
+
+.terminal-cell {
+  @apply text-xs font-mono text-bloomberg-text-primary tabular-nums;
+}
+
+.terminal-metric {
+  @apply text-sm font-mono font-semibold text-bloomberg-text-primary tabular-nums;
+}
+
+/* Financial Data Colors */
+.financial-positive {
+  @apply text-bloomberg-financial-positive;
+}
+
+.financial-negative {
+  @apply text-bloomberg-financial-negative;
+}
+
+.financial-neutral {
+  @apply text-bloomberg-financial-neutral;
+}
+
+/* Panel Components */
+.panel-container {
+  @apply bg-bloomberg-bg-secondary border border-bloomberg-border rounded-sm;
+}
+
+.panel-header {
+  @apply px-3 py-2 border-b border-bloomberg-border;
+}
+
+.panel-content {
+  @apply p-3;
+}
+
+/* Data Tables */
+.data-table {
+  @apply w-full text-xs font-mono;
+}
+
+.data-table thead {
+  @apply bg-bloomberg-bg-tertiary sticky top-0 z-10;
+}
+
+.data-table th {
+  @apply px-2 py-1.5 text-left terminal-header;
+}
+
+.data-table tbody tr {
+  @apply border-b border-bloomberg-border hover:bg-bloomberg-bg-hover cursor-pointer transition-colors;
+}
+
+.data-table td {
+  @apply px-2 py-1 terminal-cell;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply px-3 py-1.5 bg-bloomberg-accent-blue text-white rounded text-sm font-medium hover:opacity-90 transition-opacity;
+}
+
+.btn-secondary {
+  @apply px-3 py-1.5 bg-bloomberg-bg-tertiary text-bloomberg-text-primary rounded text-sm font-medium hover:bg-bloomberg-bg-hover border border-bloomberg-border transition-colors;
+}
+
+.btn-danger {
+  @apply px-3 py-1.5 bg-bloomberg-financial-negative text-white rounded text-sm font-medium hover:opacity-90 transition-opacity;
+}
+
+/* Input Fields */
+.input-field {
+  @apply bg-bloomberg-bg-tertiary border border-bloomberg-border rounded px-3 py-1.5 text-sm text-bloomberg-text-primary focus:outline-none focus:border-bloomberg-border-focus;
+}
+
+.select-field {
+  @apply bg-bloomberg-bg-tertiary border border-bloomberg-border rounded px-3 py-1.5 text-sm text-bloomberg-text-primary focus:outline-none focus:border-bloomberg-border-focus cursor-pointer;
+}
+
+/* Tabs */
+.tab-button {
+  @apply px-4 py-2 text-sm font-medium text-bloomberg-text-secondary hover:text-bloomberg-text-primary transition-colors;
+}
+
+.tab-button-active {
+  @apply px-4 py-2 text-sm font-medium text-bloomberg-accent-blue border-b-2 border-bloomberg-accent-blue;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #161A1E;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2A3038;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3A4048;
+}
+
+/* Loading States */
+.skeleton {
+  @apply animate-pulse bg-bloomberg-bg-tertiary rounded;
+}
+
+/* Tabular Numbers for Financial Data */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}

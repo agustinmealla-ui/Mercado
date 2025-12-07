@@ -1,0 +1,18 @@
+[project]
+name = "server"
+version = "0.1.0"
+description = "Options Analysis MCP Server"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.23.1",
+    "yfinance>=0.2.40",
+    "numpy>=1.26.0",
+    "scipy>=1.11.0",
+    "pandas>=2.1.0",
+    "fredapi>=0.5.1",
+    "fastapi>=0.104.0",
+    "uvicorn[standard]>=0.24.0",
+    "python-multipart>=0.0.6",
+]
